@@ -6,4 +6,3 @@ function findMatching(collection, name) {
     return driver.name;
   }
 }
-findMatching(drivers)

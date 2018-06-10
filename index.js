@@ -5,7 +5,24 @@ function findMatching(arr, str) {
   })
 }
 
-function fuzzyMatch(arr, str) {
-  
-  
+function fuzzyMatch(arr, letter) {
+  return arr.filter(function(name) {
+    return name.charAt(0) === letter.charAt(0)
+  })
+}
+
+function matchName(arr, str) {
+  return arr.filter(function(name) {
+    return name.name.toLowerCase() === str.toLowerCase()
+  })
+}function fuzzyMatch(arr, letter) {
+  return arr.filter(function(name) {
+    return name.charAt(0) === letter.charAt(0)
+  })
+}
+
+function matchName(arr, str) {
+  return arr.filter(function(name) {
+    return name.name.toLowerCase() === str.toLowerCase()
+  })
 }
